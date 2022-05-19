@@ -4,5 +4,5 @@
 and the backend is built with sanity (headless cms)
 
 =======
-### project link:https://bouba-porfolio.netlify.app
+### project link:https://bouba-portfolio.netlify.app/
 

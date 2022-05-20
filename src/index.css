@@ -1,8 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&family=Yellowtail&display=swap");
 
-:root {
+/* :root {
   --font-base: "DM Sans", sans-serif;
 
+  --primary-color: #edf2f8;
+  --secondary-color: #313bac;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+} */
+
+
+.light-theme {
+  --font-base: "DM Sans", sans-serif;
+  --primary-color: #edf2f8;
+    --secondary-color: #313bac;
+    --black-color: #030303;
+    --lightGray-color: #e4e4e4;
+    --gray-color: #6b7688;
+    --brown-color: #46364a;
+    --white-color: #ffffff;
+}
+
+.dark-theme {
+--font-base: "DM Sans", sans-serif;
   --primary-color: #edf2f8;
   --secondary-color: #313bac;
   --black-color: #030303;
@@ -18,3 +42,83 @@
   margin: 0;
   scroll-behavior: smooth;
 }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block; 
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  font-size: 1rem;
+  width: 100%;
+  /* background: #131b3a; */
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  width: 100vw;
+}
+
+html {
+  scrollbar-color: #2f3b64 white;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+  background: #e4e4e4;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(#6b7688, #6b7688);
+  border-radius: 100vw;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 900;
+}
+
+h1 {
+  color: #fff;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#0970c5 0%, #fff 45%, #313bac 10%,#4f5c8d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 100% 100%;
+  padding: 0.2em 0 0.05em 0.05em;
+  font-size: clamp(2rem, 1rem + 80vw, 10rem);
+  text-transform: uppercase;
+  line-height: 0.6;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+}
+
+/* h2 {
+  font-size: clamp(2rem, 20vw, 2.5rem);
+  color: #fff;
+  text-shadow: 0 0 0.25em #fff;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 0 1em;
+  position: relative;
+  z-index: 10;
+} */

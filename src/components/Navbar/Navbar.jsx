@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
+import I18n from '../I18n/I18n';
 
 import { images } from '../../constants';
 import './Navbar.scss';
@@ -44,6 +45,7 @@ const Navbar = () => {
           </motion.div>
         )}
       </div>
+        <I18n />
     </nav>
   );
 };

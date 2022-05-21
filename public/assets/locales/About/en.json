@@ -1,0 +1,25 @@
+{
+  "AboutSection": {
+    "span": "SELF TAUGHT",
+    "title": "WEB  DEVELOPER",
+    "about-profile": " I am  a Highly motivated self taught web developer, currently seeking to lauch a career'. I have a passion for learning new technologies and I am always trying to learn new things. building web applications and services Familiar with development, optimization and deployement process for web-based technologies. I am always seeking to continue improving and try creating applications that would allow me to change the world through software. Motivated by innovative ideas and challenges  I like to share my solved problems and help people, scroll down a bit to find my published projects."
+  },
+  "ProjectsSection": {
+    "frontend": {
+      "title": "Frontend developer",
+      "description": "I am a frontend developer with a passion for building beautiful and functional web application"
+    },
+    "web": {
+      "title": "web designer",
+      "description": "i'm a web designer for creating beautiful and functional application"
+    },
+    "php": {
+      "title": "PHP Developer",
+      "description": "i'm creative php developer"
+    },
+    "mern": {
+      "title": "Mern stack developer",
+      "description": "I'm a mern stack developer who create beautiful and functional apps"
+    }
+  }
+}

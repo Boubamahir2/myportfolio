@@ -1,0 +1,26 @@
+{
+  "AboutSection": {
+    "span": "DÉVELOPPEUR WEB ",
+    "title": "AUTO-ENSEIGNÉ",
+
+    "about-profile": "Je suis un développeur web autodidacte très motivé, cherchant actuellement à lancer une carrière. J'ai une passion pour l'apprentissage de nouvelles technologies et j'essaie toujours d'apprendre de nouvelles choses. processus de développement, d'optimisation et de déploiement de technologies Web. Je cherche toujours à m'améliorer et à essayer de créer des applications qui me permettraient de changer le monde grâce aux logiciels. Motivé par des idées innovantes et des défis, j'aime partager mes problèmes résolus et aider les gens. , faites défiler un peu pour trouver mes projets publiés."
+  },
+  "ProjectsSection": {
+    "frontend": {
+      "title": "Développeur front-end",
+      "description": "Je suis un développeur frontend passionné par la création d'applications Web belles et fonctionnelles"
+    },
+    "web": {
+      "title": "concepteur Web",
+      "description": "je suis un concepteur de sites Web pour la création d'applications belles et fonctionnelles"
+    },
+    "php": {
+      "title": "Développeur PHP",
+      "description": "je suis un développeur php créatif"
+    },
+    "mern": {
+      "title": "Développeur Mern stack",
+      "description": "Je suis un développeur mern stack qui crée des applications belles et fonctionnelles"
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
-import React, { Suspense } from "react";
+import React from "react";
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 import HttpApi from "i18next-http-backend";
@@ -19,7 +19,7 @@ i18next
     supportedLngs: ["en", "ar", "fr"],
     fallbackLng: "en",
     debug: false,
-    whiteList: ["en", "ar", "fr"],
+    ns: ["Home", "About", "Contact", "Footer", "Projects", "Skills"],
     // Options for language detector
     detection: {
       order: ["path", "cookie", "htmlTag"],
@@ -27,7 +27,7 @@ i18next
     },
     // react: { useSuspense: false },
     backend: {
-      loadPath: "/assets/locales/{{lng}}/translation.json",
+      loadPath: "/assets/locales/{{ns}}/{{lng}}.json",
     },
   });
 

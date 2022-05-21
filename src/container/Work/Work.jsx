@@ -38,7 +38,7 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
+      <h2 className="head-text">My Creative <span>Projects</span> Section</h2>
 
       <div className="app__work-filter">
         {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
@@ -109,7 +109,7 @@ const Work = () => {
 };
 
 export default AppWrap(
-  MotionWrap(Work, 'app__works'),
-  'work',
-  'app__primarybg',
+  MotionWrap(Work, "app__works"),
+  "projects",//this link to the page in the header menu
+  "app__primarybg"
 );

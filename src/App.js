@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 
-import { About, Footer, Header, Skills, Testimonial, Work } from "./container";
-import { Navbar, I18n } from "./components";
+import { About, Footer, Header, Skills,Work } from "./container";
+import { Navbar } from "./components";
 import "./App.scss";
 
 const loadingMarkup = (
@@ -18,7 +18,6 @@ const App = () => (
       <About />
       <Work />
       <Skills />
-      <Testimonial />
       <Footer />
     </div>
   </Suspense>

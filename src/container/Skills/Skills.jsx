@@ -1,14 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import ReactTooltip from 'react-tooltip';
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import ReactTooltip from "react-tooltip";
+import { useTranslation } from "react-i18next";
+import { SkillsCard } from "../../components";
 
-import { AppWrap, MotionWrap } from '../../wrapper';
-import { urlFor, client } from '../../client';
-import './Skills.scss';
+import { AppWrap, MotionWrap } from "../../wrapper";
+import { urlFor, client } from "../../client";
+import "./Skills.scss";
 
 const Skills = () => {
   const [experiences, setExperiences] = useState([]);
   const [skills, setSkills] = useState([]);
+  const { t } = useTranslation(["Skills"]);
 
   useEffect(() => {
     const query = '*[_type == "experiences"]';
@@ -25,7 +28,7 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text">Skills & Experiences</h2>
+      <h2 className="head-text">{t("title")}</h2>
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
@@ -50,29 +53,31 @@ const Skills = () => {
           {experiences.map((experience) => (
             <motion.div className="app__skills-exp-item" key={experience.year}>
               <div className="app__skills-exp-year">
-                <p className="bold-text">{experience.year}</p>
+                <p className="p-text">{experience.year}</p>
+                {/* <Years experience={experience} /> */}
               </div>
+              {/* <motion.div className="app__skills-exp-works">
+              </motion.div> */}
               <motion.div className="app__skills-exp-works">
-                {experience.works.map((work) => (
+                {experience.works.map((item) => (
                   <>
                     <motion.div
                       whileInView={{ opacity: [0, 1] }}
                       transition={{ duration: 0.5 }}
-                      className="app__skills-exp-work"
+                      className="app__skills-exp-works-item"
                       data-tip
-                      data-for={work.name}
-                      key={work.name}
+                      data-for={item.name}
+                      key={item.name}
                     >
-                      <h4 className="bold-text">{work.name}</h4>
-                      <p className="p-text">{work.company}</p>
+                      <SkillsCard item={item} />
                     </motion.div>
                     <ReactTooltip
-                      id={work.name}
+                      id={item.name}
                       effect="solid"
                       arrowColor="#fff"
                       className="skills-tooltip"
                     >
-                      {work.desc}
+                      {item.desc}
                     </ReactTooltip>
                   </>
                 ))}
@@ -86,7 +91,19 @@ const Skills = () => {
 };
 
 export default AppWrap(
-  MotionWrap(Skills, 'app__skills'),
-  'skills',
-  'app__whitebg',
+  MotionWrap(Skills, "app__skills"),
+  "skills",
+  "app__whitebg"
 );
+
+//years component
+// const Years = ({ experience }) => {
+//   const { t } = useTranslation(["Skills"]);
+//   console.log(experience.works[0]);
+//   if (experience.works.key === "Frontend developer") {
+//     return <p className="bold-text">{t("experiences.Frontend.year")}</p>;
+//   }
+//   if (experience.works.value === "Formateur") {
+//     return <p className="bold-text">{t("experiences.Formateur.year")}</p>;
+//   }
+// };

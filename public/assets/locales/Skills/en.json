@@ -1,0 +1,17 @@
+{
+  "title": "Skills & Experiences",
+  "experiences": {
+    "Frontend": {
+      "name": "Web developer",
+      "year": "2016",
+      "company": "Kushland intenational",
+      "description": "I am a frontend developer "
+    },
+    "Formateur": {
+      "name": "Trainer",
+      "year": "2018",
+      "company": "Alsaraj",
+      "description": "teaching computer basics"
+    }
+  }
+}

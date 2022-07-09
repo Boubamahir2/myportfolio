@@ -15,7 +15,8 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.logo} alt="logo" />
+        {/* <img src={images.logo} alt="logo" /> */}
+        <h3 style={{ color: "var(--gray-color)" }}>bouba portfolio</h3>
       </div>
       <ul className="app__navbar-links">
         {["home", "about", "projects", "skills", "contact"].map((item) => (
@@ -28,7 +29,7 @@ const Navbar = () => {
 
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
-          {/* small screens */}
+        {/* small screens */}
         {toggle && (
           <motion.div
             whileInView={{ x: [300, 0] }}

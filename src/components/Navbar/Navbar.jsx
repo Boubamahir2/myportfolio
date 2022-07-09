@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
-import I18n from "../I18n/I18n";
-import Darkmode from "../DarkMode/Darkmode";
+// import I18n from "../I18n/I18n";
+// import Darkmode from "../DarkMode/Darkmode";
 import { useTranslation } from "react-i18next";
 
 import { images } from "../../constants";
@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.logo} alt="logo" />
+        {/* <img src={images.logo} alt="logo" /> */}
       </div>
       <ul className="app__navbar-links">
         {["home", "about", "projects", "skills", "contact"].map((item) => (
@@ -50,8 +50,8 @@ const Navbar = () => {
         )}
       </div>
       <div className="app__navbar-icons">
-        <I18n />
-        <Darkmode />
+        {/* <I18n /> */}
+        {/* <Darkmode /> */}
       </div>
     </nav>
   );

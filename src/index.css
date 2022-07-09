@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&family=Yellowtail&display=swap");
 
-/* :root {
+:root {
   --font-base: "DM Sans", sans-serif;
 
   --primary-color: #edf2f8;
@@ -11,10 +11,10 @@
   --gray-color: #6b7688;
   --brown-color: #46364a;
   --white-color: #ffffff;
-} */
+} 
 
 
-.light-theme {
+/* .light-theme {
   --font-base: "DM Sans", sans-serif;
   --primary-color: #edf2f8;
     --secondary-color: #313bac;
@@ -34,7 +34,7 @@
   --gray-color: #6b7688;
   --brown-color: #46364a;
   --white-color: #ffffff;
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -73,7 +73,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 1em;
+  width: .5em;
   background: #e4e4e4;
 }
 
@@ -112,13 +112,6 @@ h1 {
   margin-top: .5rem;
 }
 
-/* h2 {
-  font-size: clamp(2rem, 20vw, 2.5rem);
-  color: #fff;
-  text-shadow: 0 0 0.25em #fff;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding: 0 1em;
-  position: relative;
-  z-index: 10;
-} */
+.app__navbar-links li a{
+  font-size: 1.1rem;
+}
